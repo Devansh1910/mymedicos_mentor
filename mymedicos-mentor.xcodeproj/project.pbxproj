@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9A6989F8F00302E7B8025EDA /* Pods_mymedicos_mentor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0380B3CD9E2D2F2381AA03A /* Pods_mymedicos_mentor.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		06DBE5172CEFAA6200597E91 /* mymedicos-mentor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mymedicos-mentor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8064B7DD0DDEBC0BBB80A336 /* Pods-mymedicos-mentor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mymedicos-mentor.release.xcconfig"; path = "Target Support Files/Pods-mymedicos-mentor/Pods-mymedicos-mentor.release.xcconfig"; sourceTree = "<group>"; };
+		B0380B3CD9E2D2F2381AA03A /* Pods_mymedicos_mentor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mymedicos_mentor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7AA09DF0F420996123B4FB8 /* Pods-mymedicos-mentor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mymedicos-mentor.debug.xcconfig"; path = "Target Support Files/Pods-mymedicos-mentor/Pods-mymedicos-mentor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6989F8F00302E7B8025EDA /* Pods_mymedicos_mentor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +55,8 @@
 			children = (
 				06DBE5192CEFAA6200597E91 /* mymedicos-mentor */,
 				06DBE5182CEFAA6200597E91 /* Products */,
+				E1DE3976896304254F61585A /* Pods */,
+				38E3DAB211489821CD42F744 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		38E3DAB211489821CD42F744 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0380B3CD9E2D2F2381AA03A /* Pods_mymedicos_mentor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1DE3976896304254F61585A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7AA09DF0F420996123B4FB8 /* Pods-mymedicos-mentor.debug.xcconfig */,
+				8064B7DD0DDEBC0BBB80A336 /* Pods-mymedicos-mentor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06DBE52A2CEFAA6500597E91 /* Build configuration list for PBXNativeTarget "mymedicos-mentor" */;
 			buildPhases = (
+				88355DFA18C7334F9BD6948B /* [CP] Check Pods Manifest.lock */,
 				06DBE5132CEFAA6200597E91 /* Sources */,
 				06DBE5142CEFAA6200597E91 /* Frameworks */,
 				06DBE5152CEFAA6200597E91 /* Resources */,
+				260FE61F24956B2E718A409C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +106,6 @@
 				06DBE5192CEFAA6200597E91 /* mymedicos-mentor */,
 			);
 			name = "mymedicos-mentor";
-			packageProductDependencies = (
-			);
 			productName = "mymedicos-mentor";
 			productReference = 06DBE5172CEFAA6200597E91 /* mymedicos-mentor.app */;
 			productType = "com.apple.product-type.application";
@@ -107,6 +134,9 @@
 			);
 			mainGroup = 06DBE50E2CEFAA6200597E91;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				06DBE5852CEFB3A600597E91 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 06DBE5182CEFAA6200597E91 /* Products */;
 			projectDirPath = "";
@@ -127,6 +157,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		260FE61F24956B2E718A409C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mymedicos-mentor/Pods-mymedicos-mentor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mymedicos-mentor/Pods-mymedicos-mentor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mymedicos-mentor/Pods-mymedicos-mentor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88355DFA18C7334F9BD6948B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mymedicos-mentor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		06DBE5132CEFAA6200597E91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,17 +212,18 @@
 /* Begin XCBuildConfiguration section */
 		06DBE52B2CEFAA6500597E91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7AA09DF0F420996123B4FB8 /* Pods-mymedicos-mentor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7W5TX4V26D;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mymedicos-mentor/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -168,17 +241,18 @@
 		};
 		06DBE52C2CEFAA6500597E91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8064B7DD0DDEBC0BBB80A336 /* Pods-mymedicos-mentor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7W5TX4V26D;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mymedicos-mentor/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +409,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06DBE5852CEFB3A600597E91 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 06DBE50F2CEFAA6200597E91 /* Project object */;
 }

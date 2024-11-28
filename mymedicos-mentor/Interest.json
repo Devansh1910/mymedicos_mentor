@@ -1,0 +1,58 @@
+{
+  "medical_specialties": [
+    {
+      "name": "Anatomy"
+    },
+    {
+      "name": "Biochemistry"
+    },
+    {
+      "name": "Pathology"
+    },
+    {
+      "name": "Pharmacology"
+    },
+    {
+      "name": "Microbiology"
+    },
+    {
+      "name": "Forensic Medicine"
+    },
+    {
+      "name": "PSM"
+    },
+    {
+      "name": "ENT"
+    },
+    {
+      "name": "Ophthalmology"
+    },
+    {
+      "name": "Gynaecology & Obstetrics"
+    },
+    {
+      "name": "Pediatrics"
+    },
+    {
+      "name": "Surgery"
+    },
+    {
+      "name": "Medicine"
+    },
+    {
+      "name": "Radiology"
+    },
+    {
+      "name": "Anaesthesia"
+    },
+    {
+      "name": "Orthopaedics"
+    },
+    {
+      "name": "Psychiatry"
+    },
+    {
+      "name": "Dermatology"
+    }
+  ]
+}
